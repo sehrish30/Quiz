@@ -8,7 +8,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <div class="container">
-    <a class="navbar-brand text-style" href="#">Ask Question</a>
+    <a class="navbar-brand text-style" href="{% url 'qlist' %}">Ask Question</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -36,10 +36,10 @@
           <button class="btn btn-outline-success" type="submit">Search</button>
         </form>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'qlist' %}">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Add Question</a>
+          <a class="nav-link" href="{% url 'create_question'%}">Add Question</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{% url 'logout' %}">Logout</a>

@@ -1,6 +1,7 @@
 from django.db import models
 from django.conf import settings
 
+
 # Create your models here.
 class Question(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
