@@ -1,3 +1,138 @@
 {
+  "workbench.colorTheme": "Crimson Night",
+  // "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "[vue]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[tsx]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[ts]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // "[php]": {
+  //   "editor.formatOnSave": true,
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  "python.pythonPath": "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.lintOnSave": true,
+  "python.testing.unittestEnabled": true,
+  "python.testing.pytestEnabled": false,
+  "python.testing.nosetestsEnabled": false,
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.saveAllFilesBeforeRun": true,
+  "code-runner.showExecutionMessage": false,
+  "code-runner.executorMap": {
+    "javascript": "node",
+    "python": "python",
+    "sass": "sass --style expanded",
+    "scss": "scss --style expanded",
+    "less": "cd $dir && lessc $fileName $fileNameWithoutExt.css"
+  },
+
+  "workbench.iconTheme": "material-icon-theme",
+  "vsicons.dontShowNewVersionMessage": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "prolog.dialect": "swi",
+  "prolog.executablePath": "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\SWI-Prolog 8.2.1",
+  "prolog.linter.run": "onType",
+  "prolog.terminal.runtimeArgs": [],
+  "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+  "terminal.integrated.shellArgs.windows": ["-ExecutionPolicy", "Bypass"],
+  "eslint.validate": ["javascript", "javascriptreact", "vue"],
+  "eslint.options": {
+    "extensions": [".html", ".js", ".jsx", ".vue"]
+  },
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "python.languageServer": "Pylance",
+  "java.home": "C:\\Program Files\\Java\\jdk-11.0.9",
+  "java.help.firstView": "gettingStarted",
+  "java.project.referencedLibraries": [
+    "lib/**/*.jar",
+    "c:\\Users\\user\\Downloads\\junit-platform-console-standalone-1.6.0.jar"
+  ],
+  "editor.formatOnSave": true,
+  // "prettier.disableLanguages": ["django-html"],
+  "files.associations": {
+    "**/*.html": "html",
+    "**/templates/**/*.html": "django-html",
+    "**/templates/**/*": "django-txt",
+    "**/requirements{/**,*}.{txt,in}": "pip-requirements",
+    "*.sql": "postgres"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  },
+  "sync.gist": "1860152d249cd1a77c77dfadbd0860db",
+  "sync.autoUpload": true,
+  "sync.removeExtensions": false,
+  "material-icon-theme.languages.associations": {},
+  "git.autofetch": true,
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "[django-html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+    // "editor.defaultFormatter": "HookyQR.beautify"
+  },
+  "tabnine.experimentalAutoImports": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "python.defaultInterpreterPath": "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe",
+  "beautify.language": {
+    "html": ["blade", "django-html"]
+  },
+
+  "[php]": {
+    "editor.formatOnSave": false
+  },
+  "emmet.includeLanguages": {
+    "javascript": "html",
+    "vue": "html",
+    "vue-html": "html",
+    "javascriptreact": "html",
+    "typescript": "html",
+    "django-html": "html"
+  },
+  "typescript.validate.enable": true,
+  "[typescriptreact]": {
+    "editor.showUnused": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "git.confirmSync": false,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "git.enableSmartCommit": true,
   "python.formatting.provider": "black"
 }
