@@ -1,0 +1,79 @@
+{% extends 'base.html'%}
+{% load crispy_forms_tags %}
+
+{% block title %}
+Listing Questions
+{% endblock %}
+
+{% block style %}
+<style>
+    .link-style {
+      text-decoration: none;
+      color: rgb(28, 98, 4);
+    }
+    .link-style:hover {
+      text-decoration: none;
+      color: gray;
+    }
+  </style>
+{% endblock %}
+
+{% block body %}
+  <ul class="nav nav-tabs" id="myTab" role="tablist">
+    <li class="nav-item" role="presentation">
+      <a class="nav-link active" id="home-tab" data-bs-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Question</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Answer</a>
+    </li>
+    <li class="nav-item" role="presentation">
+      <a class="nav-link" id="contact-tab" data-bs-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+    </li>
+  </ul>
+<div class="tab-content" id="myTabContent">
+    <div class="tab-pane fade show active" id="home">
+        <div class="card mt-4 py-3">
+            <h4 class="card-header">
+                You have asked {{questions.count}} questions
+            </h4>
+            <div class="card-body">
+                 {% for question in questions %}
+                 <h5 class="card-text">
+                     <a class="link-style" href="{% url 'qdetails' question.slug %}">
+                         {{question.title}}
+                     </a>
+                 </h5>
+                 <a class="btn btn-outline-danger btn-sm mt-3" href="{% url 'delete_question' question.slug %}">
+                     Delete
+                 </a>
+                 <a class="btn btn-outline-success btn-sm mt-3" href="{% url 'update_question' question.slug %}">
+                    Update
+                </a>
+                <hr>
+                 {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade " id="profile">
+        <div class="card mt-4 py-3">
+            <h4 class="card-header">
+                You have answered {{answers.count}} question
+            </h4>
+            <div class="card-body">
+                 {% for answer in answers %}
+                 <p class="card-text">
+                     {{answer.description}}
+                 </p>
+                 <a class="btn btn-outline-danger btn-sm mt-3" href="{% url 'delete_answer' answer.id %}">
+                     Delete
+                 </a>
+                 <a class="btn btn-outline-success btn-sm mt-3" href="{% url 'update_answer' answer.id %}">
+                    Update
+                </a>
+                <hr>
+                 {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
